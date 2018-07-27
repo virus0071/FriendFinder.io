@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friends</title>
+    <!-- x icon-->
+    <link rel='icon' href='./imgs/f.png' type='image/x-icon' />
+
+
+
+
+
+    <!--local css-->
+    <link rel="stylesheet" href="./style.css">
+
+
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Arbutus|Marko+One|Monofett|Ravi+Prakash|Seymour+One" rel="stylesheet">
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron" id="surveyHead">
+            <h1>Survey Questions</h1>
+            <br>
+            <br>
+            <a href="/">
+                <button class="btn btn-warning">
+                    <i class="fas fa-home"></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron jumbotron-info">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Your Infomation</h3>
+                </div>
+                <hr>
+                <label class="personalInfo" for="name">Name</label>
+                <span class="star">*</span>
+                <input type="text" name="" class="form-control persInfo" id="name" required>
+
+                <label class="personalInfo" for="photo">Photo</label>
+                <span class="star">*</span>
+                <input type="text" name="" class="form-control persInfo" id="photo" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jumbotron jumbotron-info">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Questions</h3>
+                    <h3>1 = strongly disagree; 5 = strongly agree</h3>
+                </div>
+                <hr>
+
+                <h4>1. Do you like swimming?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <h4>2. Do you like playing basketball?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <h4>3. Do you like listening to music?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <h4>4. Do you like animals?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q4">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+                <h4>5. Do you like reptile?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q5">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <h4>6. Do you like skiing?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q6">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <h4>7. Do you like playing video game?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q7">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <h4>8. Do you like watching movies?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q8">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <h4>9. Do you like writing code?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q9">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <h4>10. Do you like fishing?
+                    <span class="star">*</span>
+
+                    <select class="userChosen" id="q10">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </h4>
+
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="rModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Most Compatible Friend:</h3>
+                </div>
+
+                <div class="modal-body">
+                    <h3 id="mName"></h3>
+                    <img id="mImg" src="" alt="">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" id="close" class="btn btn-danger" data-dismiss="modal">
+                        <i class="fas fa-window-close"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function (event) {
+        event.preventDefault();
+        if ($(".persInfo").val().trim() !== "") {
+            var newUser = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [$("#q1").val(),
+                $("#q2").val(), $("#q3").val(),
+                $("#q4").val(), $("#q5").val(),
+                $("#q6").val(), $("#q7").val(),
+                $("#q8").val(), $("#q9").val(),
+                $("#q10").val()]
+            };
+            console.log(newUser);
+
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", newUser, function (data) {
+                $("#mName").text(data.name);
+                $("#mImg").attr("src", data.photo);
+                $("#rModal").modal('toggle');
+
+                $("#name").val("");
+                $("#photo").val("");
+            });
+        } else {
+            alert("You missed some required questions!")
+        }
+        return false;
+
+
+    });
+
+</script>
